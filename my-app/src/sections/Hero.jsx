@@ -5,7 +5,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       aria-labelledby="hero-heading"
     >
-      {/* Background gradient – replace with real photo using: className="bg-[url('/hero.jpg')] bg-cover bg-center" */}
+      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600" aria-hidden="true" />
       <div className="absolute top-20 right-10 w-72 h-72 bg-amber-400/20 rounded-full blur-3xl" aria-hidden="true" />
       <div className="absolute bottom-20 left-10 w-56 h-56 bg-blue-400/20 rounded-full blur-3xl" aria-hidden="true" />
@@ -15,20 +15,26 @@ export default function Hero() {
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
           </svg>
-          #1 Doorstep Vehicle Cleaning Service
+          Lucknow&apos;s #1 Doorstep Car &amp; Bike Cleaning
         </div>
 
         <h1
           id="hero-heading"
-          className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
+          className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-4"
         >
-          Your Vehicle Deserves{' '}
-          <span className="text-amber-400">to Shine</span>
+          Car &amp; Bike Wash{' '}
+          <span className="text-amber-400">at Your Doorstep</span>
+          <span className="block text-3xl sm:text-4xl lg:text-5xl mt-2 text-blue-200 font-bold">
+            in Lucknow
+          </span>
         </h1>
 
-        <p className="text-blue-100 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Professional car and bike cleaning at your doorstep. Eco-friendly products,
-          trained experts, and sparkling results — every single time.
+        <p className="text-blue-100 text-lg sm:text-xl max-w-2xl mx-auto mb-3 leading-relaxed">
+          Professional car washing &amp; bike cleaning at your home anywhere in Lucknow.
+          Eco-friendly products, trained experts, sparkling results — every single time.
+        </p>
+        <p className="text-blue-200 text-sm max-w-xl mx-auto mb-10">
+          Serving Gomti Nagar · Hazratganj · Aliganj · Indira Nagar · Alambagh &amp; all Lucknow areas
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
@@ -39,10 +45,10 @@ export default function Hero() {
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
-            Book Now
+            Book Now – From ₹359
           </a>
           <a
-            href="https://wa.me/919369945464?text=Hi%2C+I+want+to+know+more+about+ShineRide"
+            href="https://wa.me/919369945464?text=Hi%2C+I+want+to+book+car+or+bike+cleaning+in+Lucknow"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 border border-white/30 text-white font-bold text-lg hover:bg-white/20 active:scale-95 transition-all backdrop-blur-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-900"
@@ -56,9 +62,9 @@ export default function Hero() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {[
-            { icon: '🏠', label: 'Doorstep Service', desc: 'We come to you' },
-            { icon: '🌿', label: 'Eco-Friendly Products', desc: 'Safe for the planet' },
-            { icon: '👨‍🔧', label: 'Trained Staff', desc: 'Background-verified experts' },
+            { icon: '🏠', label: 'Doorstep Service', desc: 'We come to you in Lucknow' },
+            { icon: '🌿', label: 'Eco-Friendly Products', desc: 'Safe for your vehicle & planet' },
+            { icon: '👨‍🔧', label: 'Trained Experts', desc: 'Background-verified staff' },
           ].map((badge) => (
             <div
               key={badge.label}
